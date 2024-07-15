@@ -2,10 +2,10 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 const History = ({navigation, route}) => {
-  console.log(route.params.searchHistory);
+//   console.log(route.params.searchHistory);
   return (
     <View>
-      {route.params.searchHistory ? (
+      {/* {route.params.searchHistory ? (
         route.params.searchHistory.map((search, i) => {
           return (
             <View key={i}>
@@ -16,7 +16,7 @@ const History = ({navigation, route}) => {
         })
       ) : (
         <Text>No search history</Text>
-      )}
+      )} */}
     </View>
   );
 };

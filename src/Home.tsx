@@ -36,12 +36,12 @@ const Home = ({navigation}) => {
                   const {totalResults, Response, ...result} = res;
                   setSearchResult(result);
                 });
-                setSearchHistory(
-                  searchHistory.concat({
-                    query: searchQuery,
-                    timestamp: new Date().toISOString(),
-                  }),
-                );
+                // setSearchHistory(
+                //   searchHistory.concat({
+                //     query: searchQuery,
+                //     timestamp: new Date().toISOString(),
+                //   }),
+                // );
                 console.log(Object.values(searchResult));
               }
             }}
@@ -68,12 +68,12 @@ const Home = ({navigation}) => {
           <Text>No results</Text>
         )}
       </View>
-      <Button
+      {/* <Button
         onPress={() => {
           navigation.navigate('History', {searchHistory});
         }}
         title="History"
-      />
+      /> */}
     </View>
   );
 };
